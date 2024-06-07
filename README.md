@@ -10,8 +10,6 @@
 </p>
 
 A photo viewing application that consumes the unsplash API.
-
-[Get it on playstore](https://play.google.com/store/apps/details?id=com.cmaina.fotos)
 ## Screenshots
 
 <p align="center">
