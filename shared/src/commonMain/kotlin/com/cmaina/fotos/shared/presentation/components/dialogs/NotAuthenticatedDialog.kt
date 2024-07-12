@@ -8,6 +8,8 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.material.Card
 import androidx.compose.material.Icon
 import androidx.compose.material.MaterialTheme
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.ExperimentalComposeUiApi
@@ -44,7 +46,7 @@ fun NotAuthenticatedDialog(
                     verticalArrangement = Arrangement.SpaceAround
                 ) {
                     Icon(
-                        painter = PainterResource.BaselineKey(),
+                        painter = Icons.Default.ArrowBack,
                         tint = MaterialTheme.colors.onPrimary,
                         contentDescription = "alert icon"
                     )

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="home_title_text">Explore</string>
+    <string name="download_photo_description">Download photo</string>
+    <string name="like_photo_description">like photo</string>
+    <string name="user_image_description">user image</string>
+    <string name="number_of_likes">%1$s likes</string>
+</resources>

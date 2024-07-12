@@ -2,13 +2,8 @@ plugins {
     kotlin("multiplatform")
     id("com.android.library")
     id("org.jetbrains.compose")
-    id("dev.icerock.mobile.multiplatform-resources")
 }
 
-multiplatformResources{
-    multiplatformResourcesPackage = "com.cmaina."
-    multiplatformResourcesClassName = "SharedResources"
-}
 
 kotlin {
     jvm("desktop")
@@ -25,7 +20,8 @@ kotlin {
 
         val commonMain by getting {
             dependencies {
-                implementation("dev.icerock.moko:resources-compose:0.23.0")
+                @OptIn(org.jetbrains.compose.ExperimentalComposeLibrary::class)
+                implementation(compose.components.resources)
                 implementation(compose.material)
                 implementation(compose.foundation)
                 implementation ("io.github.aakira:napier:2.7.1")
